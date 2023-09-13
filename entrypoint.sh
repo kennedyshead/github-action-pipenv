@@ -1,3 +1,5 @@
 #!/bin/sh
 
-sh -c "pipenv $*"
+if [[ "$*" != *"echo"* ]] ;then
+  sh -c "pipenv $*"
+fi
